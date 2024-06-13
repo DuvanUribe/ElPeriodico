@@ -2,6 +2,10 @@ type Query{
     findAllQuality : [Quality]
     findQualityById(id: Int) :Quality
     findAllPerson : [Person]
+    findAllNews : [News]
+    findNewsById(id: Int) :News
+    findAllInterview : [Interview]
+    findInterviewById(id: Int) :Interview
 }
 
 type Quality {
@@ -34,3 +38,37 @@ type NewsRelarionJson {
     id1:NewsJson
     id2:NewsJson
 }
+
+type News {
+    id: ID
+    date:String
+    hour:String
+    holder: String
+    body:String
+    agencyNews:[AgencyNewsJson]
+    Interview:[InterviewJson]
+    newsList:[NewsJson]
+}
+type NewsJson {
+    id: ID
+    date:String
+    hour:String
+    holder: String
+    body:String
+}
+
+type Interview {
+    id: ID
+    summary : String
+    journalist:PersonJson
+    involved:PersonJson
+    news:NewsJson
+    quality:QualityJson
+
+}
+type InterviewJson {
+    id: ID
+    summary : String
+    idNews:Int
+}
+

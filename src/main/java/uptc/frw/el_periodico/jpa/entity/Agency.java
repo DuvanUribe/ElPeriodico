@@ -28,6 +28,6 @@ public class Agency {
     @Column(name ="ANIO_CREACION")
     private Integer yearCreacion;
 
-   /* @OneToMany(mappedBy ="agency")
-    private List<AgencyNews> agencyNews;*/
+    @OneToMany(mappedBy ="agency")
+    private List<AgencyNews> agencyNews;
 }

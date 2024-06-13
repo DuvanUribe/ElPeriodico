@@ -2,8 +2,9 @@ package uptc.frw.el_periodico.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import uptc.frw.graphqlgrupo2.jpa.entity.*;
-import uptc.frw.graphqlgrupo2.jpa.repository.InterviewRepository;
+import uptc.frw.el_periodico.jpa.entity.Interview;
+import uptc.frw.el_periodico.jpa.repository.InterviewRepository;
+
 
 import java.util.List;
 

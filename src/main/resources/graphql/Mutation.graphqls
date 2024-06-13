@@ -41,6 +41,16 @@ input AgencyNewsUpdate {
     idNews: Int
     idAgency:Int
 }
+input AgencyCreate {
+    agencyName: String,
+    yearCreacion: Int
+}
+
+input AgencyUpdate {
+    id: ID,
+    agencyName: String,
+    yearCreacion: Int
+}
 
 input PersonUpdate {
     id: ID

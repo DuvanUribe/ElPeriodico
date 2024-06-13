@@ -2,7 +2,8 @@ package uptc.frw.el_periodico.jpa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import uptc.frw.graphqlgrupo2.jpa.entity.AgencyNews;
+import uptc.frw.el_periodico.jpa.entity.AgencyNews;
+
 
 import java.util.List;
 

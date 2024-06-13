@@ -1,0 +1,33 @@
+type Mutation{
+    createQuality(inputQuality : QualityCreate) : Quality
+    updateQuality(inputQuality : QualityUpdate) : Quality
+    deleteQuality(id:Int):String
+    createPerson(inputPerson : PersonCreate) : Person
+    updatePerson(inputPerson : PersonUpdate) : Person
+    deletePerson(id:Int):String
+    createRelationNews(id1: Int, id2: Int):String
+    deleteRelationNews(id1: Int, id2: Int):String
+}
+input QualityCreate {
+    quialityType: String
+}
+
+input QualityUpdate {
+    id: ID
+    quialityType: String
+}
+input PersonCreate {
+    name: String
+    addres: String
+    phone: Int
+    birthday: String
+}
+
+input PersonUpdate {
+    id: ID
+    name: String
+    addres: String
+    phone: Int
+    birthday: String
+
+}

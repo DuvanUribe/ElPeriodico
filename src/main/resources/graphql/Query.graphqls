@@ -1,0 +1,36 @@
+type Query{
+    findAllQuality : [Quality]
+    findQualityById(id: Int) :Quality
+    findAllPerson : [Person]
+}
+
+type Quality {
+    id: ID
+    quialityType: String
+    Interview:[InterviewJson]
+}
+
+type QualityJson {
+    id: ID
+    quialityType: String
+}
+type Person {
+    id: ID
+    name:String
+    addres:String
+    phone: Int
+    birthday:String
+    journalist:[InterviewJson]
+    involved:[InterviewJson]
+}
+type PersonJson {
+    id: ID
+    name:String
+    addres:String
+    phone: Int
+    birthday:String
+}
+type NewsRelarionJson {
+    id1:NewsJson
+    id2:NewsJson
+}

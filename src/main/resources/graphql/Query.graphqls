@@ -2,6 +2,10 @@ type Query{
     findAllQuality : [Quality]
     findQualityById(id: Int) :Quality
     findAllPerson : [Person]
+    findAllAgency : [Agency]
+    findAgencyById(id: Int) :Agency
+    findAllAgencyNews : [AgencyNews]
+    findAgencyNewsById(id: Int) :AgencyNews
 }
 
 type Quality {
@@ -13,6 +17,33 @@ type Quality {
 type QualityJson {
     id: ID
     quialityType: String
+}
+type Agency {
+    id: ID,
+    agencyName: String
+    yearCreacion: Int
+    agencyNews:[AgencyNewsJson]
+}
+type AgencyJson {
+    id: ID,
+    agencyName: String
+    yearCreacion: Int
+
+}
+type AgencyNews {
+    id: ID
+    date:String
+    hour:String
+    news: NewsJson
+    agency:AgencyJson
+}
+
+type AgencyNewsJson {
+    id: ID
+    date:String
+    hour:String
+    idNews:Int
+    idAgency:Int
 }
 type Person {
     id: ID

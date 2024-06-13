@@ -7,6 +7,12 @@ type Mutation{
     deletePerson(id:Int):String
     createRelationNews(id1: Int, id2: Int):String
     deleteRelationNews(id1: Int, id2: Int):String
+    createNews(inputNews : NewsCreate) : News
+    updateNews(inputNews : NewsUpdate) : News
+    deleteNews(id:Int):String
+    createInterview(inputInterview : InterviewCreate) : Interview
+    updateInterview(inputInterview : InterviewUpdate) : Interview
+    deleteInterview(id:Int):String
 }
 input QualityCreate {
     quialityType: String
@@ -30,4 +36,35 @@ input PersonUpdate {
     phone: Int
     birthday: String
 
+}
+
+input NewsCreate {
+    date:String
+    hour:String
+    holder: String
+    body:String
+}
+
+input NewsUpdate {
+    id: ID
+    date:String
+    hour:String
+    holder: String
+    body:String
+}
+
+input  InterviewCreate {
+    summary : String
+    idNews:Int
+    idInvolved:Int
+    idJournalist:Int
+    idQuality:Int
+}
+input  InterviewUpdate {
+    id: ID
+    summary : String
+    idNews:Int
+    idInvolved:Int
+    idJournalist:Int
+    idQuality:Int
 }

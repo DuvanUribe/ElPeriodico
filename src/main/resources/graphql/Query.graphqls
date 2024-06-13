@@ -6,6 +6,8 @@ type Query{
     findAgencyById(id: Int) :Agency
     findAllAgencyNews : [AgencyNews]
     findAgencyNewsById(id: Int) :AgencyNews
+    findAllInterview : [Interview]
+    findInterviewById(id: Int) :Interview
 }
 
 type Quality {
@@ -64,4 +66,28 @@ type PersonJson {
 type NewsRelarionJson {
     id1:NewsJson
     id2:NewsJson
+}
+
+type Interview {
+    id: ID
+    summary : String
+    journalist:PersonJson
+    involved:PersonJson
+    news:NewsJson
+    quality:QualityJson
+
+}
+
+type NewsJson {
+    id: ID
+    date:String
+    hour:String
+    holder: String
+    body:String
+}
+
+type InterviewJson {
+    id: ID
+    summary : String
+    idNews:Int
 }

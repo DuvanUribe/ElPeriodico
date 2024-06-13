@@ -16,7 +16,7 @@ type Query{
 type Quality {
     id: ID
     quialityType: String
-    Interview:[InterviewJson]
+    interviews:[InterviewJson]
 }
 
 type QualityJson {

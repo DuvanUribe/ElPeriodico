@@ -3,6 +3,9 @@ package uptc.frw.el_periodico.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import uptc.frw.el_periodico.jpa.entity.Interview;
+import uptc.frw.el_periodico.jpa.entity.News;
+import uptc.frw.el_periodico.jpa.entity.Person;
+import uptc.frw.el_periodico.jpa.entity.Quality;
 import uptc.frw.el_periodico.jpa.repository.InterviewRepository;
 
 

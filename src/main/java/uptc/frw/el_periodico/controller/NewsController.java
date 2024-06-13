@@ -5,8 +5,8 @@ import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
-import uptc.frw.graphqlgrupo2.jpa.entity.News;
-import uptc.frw.graphqlgrupo2.service.NewsService;
+import uptc.frw.el_periodico.jpa.entity.News;
+import uptc.frw.el_periodico.service.NewsService;
 
 import java.util.List;
 

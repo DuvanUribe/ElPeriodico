@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ElPeriodicoApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(ElPeriodicoApplication.class, args);
     }
 

@@ -5,8 +5,9 @@ import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
-import uptc.frw.graphqlgrupo2.jpa.entity.Agency;
-import uptc.frw.graphqlgrupo2.service.AgencyService;
+import uptc.frw.el_periodico.jpa.entity.Agency;
+import uptc.frw.el_periodico.service.AgencyService;
+
 
 import java.util.List;
 
